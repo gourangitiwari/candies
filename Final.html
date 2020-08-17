@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Final.css">
+</head>
+<body onunload="myFunction()">
+
+
+
+<h1>Welcome </h1>
+Enter the candy name you like: <input type="text" id="myInput"   onfocus="focusFunction()" onblur="blurFunction()" onchange="myFunction()">
+
+
+<p>Candy, also called sweets (British English) or lollies (Australian English, New Zealand English),[a] is a confection that features sugar as a principal ingredient. The category, called sugar confectionery, encompasses any sweet confection, including chocolate, chewing gum, and sugar candy. Vegetables, fruit, or nuts which have been glazed and coated with sugar are said to be candied.</p>
+
+<iframe onload="myFunction()" src="https://comps.canstockphoto.com/assorted-variety-of-sweet-sugar-candies-stock-photography_csp66201800.jpg"></iframe>
+
+<p id="demo"></p>
+
+
+<p>Close this window or press F5 to reload the page.</p>
+
+<script>
+function focusFunction() {
+  // Focus = Changes the background color of input to yellow
+  document.getElementById("myInput").style.background = "yellow";
+}
+
+function blurFunction() {
+  // On focus = Changes the background color of input to red
+  document.getElementById("myInput").style.background = "red";
+}
+function myFunction() {
+  var x = document.getElementById("myInput");
+  x.value = x.value.toUpperCase();
+}
+function myFunction() {
+  alert("Thank you for visiting!");
+}
+</script>
+<script>
+document.getElementById("demo").onmouseover = function() {
+	mouseOver()
+};
+document.getElementById("demo").onmouseout = function()
+ {
+ 	mouseOut()
+ };
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+};
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+};
+</script>
+<script>
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+</script>
+<h1 id="demo">Mouse over me</h1>
+<form onsubmit="myFunction()">
+  Enter name: <input type="text">
+  <input type="submit">
+</form>
+</body>
+</html>
